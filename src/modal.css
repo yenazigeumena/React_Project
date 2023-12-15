@@ -1,0 +1,109 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Pretendard-Regular';
+    font-size: 18px;
+}
+.modal-overlay header {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    line-height: 70px;
+    text-align: left;
+    border-bottom: 1px solid #ececec;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+.modal-close span {
+    font-size: 25px;
+    margin-right: 15px;
+}
+.modal-close {
+    position: absolute;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 20px;
+    width: 120px;
+    height: 70px;
+}
+.modal {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.modal ul li {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.modal ul li label {
+    margin-right: 20px;
+}
+ul li:nth-child(2) input, ul li:nth-child(3) input {
+    width: 400px;
+    height: 30px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+}
+.modal ul li:first-child input {
+    width: 400px;
+    height: 40px;
+    font-size: 18px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.modal ul li:first-child input::placeholder {
+    font-weight: bold;
+    font-size: 18px;
+}
+.modal ul li:first-child input:focus {
+    outline: none;
+    border-bottom: 1px solid black;
+}
+.modal button {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.modal button:hover {
+    background-color: #fae63f;
+}
+.modal ul li:nth-child(4) label {
+    line-height: 0px;
+}
+.modal ul li:nth-child(4) input {
+    width: 400px;
+    height: 250px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+}

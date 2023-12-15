@@ -1,0 +1,93 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Dovemayo_gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.calculator-container header {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+}
+.calculator-container #header_content {
+    height: 50px;
+    font-size: 25px;
+    font-family: 'Dovemayo_gothic';
+}
+.calculator-container #header_content span {
+    color: #2e89e5;
+    font-weight: bold;
+    font-size: 25px;
+}
+.calculator-container #content {
+    width: 60%;
+    float: left;
+}
+.calculator-container ul {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.calculator-container ul li {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+}
+.calculator-container ul li label {
+    width: 200px;
+    float: left;
+}
+.calculator-container ul li input, ul li select {
+    width: calc(100% - 200px);
+    height: 40px;
+    border-radius: 7px;
+    box-sizing: border-box;
+    padding: 0 10px 0 10px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    text-align: left;
+}
+.calculator-container ul li:first-child div {
+    background-color: #f2f6fc;
+    border-radius: 10px;
+    height: 50px;
+    line-height: 50px;
+}
+.calculator-container ul li:first-child select {
+    width: 40%;
+}
+.calculator-container ul li button {
+    height: 50px;
+    float: left;
+    border-radius: 7px;
+    margin-top: 10px;
+    background-color: #fff230;
+    border: 1px solid #ffe000;
+}
+.calculator-container .weekly_holiday_allowance {
+    width: calc((100% - 200px)/2);
+}
+.calculator-container #calculate, #reset {
+    width: 49.5%;
+}
+.calculator-container #calculate {
+    margin-right: 1%;
+}
+
+.calculator-container #target, #conversion, ul li:nth-of-type(5) {
+    display: none;
+}
+.calculator-container #result {
+    width: 40%;
+    height: 200px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #ccc;
+    float: left;
+}

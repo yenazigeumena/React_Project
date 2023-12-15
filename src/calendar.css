@@ -1,0 +1,194 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Pretendard-Regular';
+    font-size: 18px;
+}
+body {
+    position: relative;
+    min-width: 1450px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+}
+.calendar-container > header {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    line-height: 70px;
+    text-align: left;
+    border-bottom: 1px solid #ececec;
+}
+.calendar-container > header button {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+#content header button {
+    width: 210px;
+    height: 40px;
+    float: right;
+    border: 1px solid #ececec;
+    margin-top: 16px;
+    border-radius: 7px;
+    margin-left: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    margin-right: 20px;
+}
+#content header button:hover {
+    background-color: #f5f5f5;
+}
+/* 캘린더 메뉴 */
+#content {
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 72px);
+    float: left;
+}
+#flexWrap {
+    width: 100%;
+    height: calc(100% - 70px);
+}
+#content > header {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #f5f5f5;
+}
+#content > header ul {
+    margin-left: 20px;
+    height: 30px;
+    margin-top: 20px;
+    float: left;
+}
+#content > header ul li {
+    float: left;
+    width: 32px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #dbdbdb;
+    border-right: 0px;
+    cursor: pointer;
+}
+#content > header ul li:hover {
+    background-color: #f5f5f5;
+}
+#content > header ul li:first-child {
+    border-radius: 5px 0px 0px 5px;
+}
+#content > header ul li:nth-child(3) {
+    border-right: 1px solid #dbdbdb;
+    font-size: 16px;
+    width: 56px;
+    border-radius: 0px 5px 5px 0px;
+}
+#content > header ul li:last-child {
+    border: none;
+    float: left;
+    cursor:auto;
+    width: auto;
+    margin-top: -20px;
+    line-height: 70px;
+}
+#content > header ul li:last-child:hover {
+    background-color: #fff;
+}
+#content > header span {
+    display: inline-block;
+    line-height: 70px;
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+#section {
+    position: relative;
+    width: 13%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 20px 10px;
+}
+#section-header {
+    width: 100%;
+    height: 40px;
+}
+#day-schedule li {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 10px;
+    background-color: #fbfbfb;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#day-schedule li .line {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 5px;
+    height: 50px;
+    background-color: #ecc035;
+}
+#day-schedule li:hover {
+    background-color: #f7f7f7;
+}
+#day-schedule button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-color: #ccc;
+}
+#schedule_title {
+    width: 70%;
+    margin-left: 10px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+table {
+    width: 87%;
+    height: 100%;
+    border-collapse: collapse;
+    float: left;
+}
+thead > tr th {
+    box-sizing: border-box;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 15px;
+    border-right: 1px solid #f3f5f7;
+}
+.date {
+    box-sizing: border-box;
+    padding: 5px 10px;
+    vertical-align: 0;
+    margin: 0;
+    border: 1px solid #f3f5f7;
+    border-top: 0;
+    border-left: 0;
+}
+tbody td:first-child {
+    color: red;
+}
+tbody td:last-child {
+    color: blue;
+}
+.date:hover {
+    cursor: pointer;
+}
